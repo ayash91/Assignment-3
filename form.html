@@ -1,0 +1,132 @@
+<html>
+    <head>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	    <style>
+		    *{
+			    box-sizing:border-box;
+			}
+		    body{
+			    background:white;
+				width:100%;
+				margin:0;
+				font-family:'Roboto',sans-serif;
+			}
+			.header{
+			    
+				display:block;
+				font-size:40px;
+				text-align:center;
+				width:100%;
+				height:20%;
+				background:#349d34;
+				margin:0;
+				padding-top:30px;
+				font-weight:bold;
+				color:white;
+				box-shadow:-webkit-box-shadow: 0px 19px 58px -5px rgba(0,0,0,0.52);
+                           -moz-box-shadow: 0px 19px 58px -5px rgba(0,0,0,0.52);
+                           box-shadow: 0px 19px 58px -5px rgba(0,0,0,0.52);
+			}
+			.container{
+			    padding:30px 100px 30px 100px;
+				font-size:20px;
+				width:100%;
+			}
+			img{
+			    width:270px;
+				height:300px;
+				margin:0;
+			}
+			footer{
+			    width:100%;
+				height:140px;
+				text-align:center;
+				font-size:40px;
+				font-weight:strong;
+				background-color:black;
+				color:white;
+				padding-top:50px;
+				font-family:'Lobster',cursive;
+			}
+			input,label,select{
+			    font-size:20px;
+				text-align:center;
+			}
+			.button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+	            margin-left:43.5%;
+	            transition-duration:0.4s;
+            } 
+            .button:hover {
+                background-color: #297d29; /* Green */
+                color: white;
+            }
+		</style>
+	</head>
+	<body>
+	    <div class="header">
+		    ORDER NOW
+		</div>
+		<div class="container">
+		    <div>
+			    <form method="post" target=_top>
+				    <fieldset>
+				    <legend style="color:green; font-size:15px;">Personal Info</legend>
+				    <label>Name</label>
+				    <input type="text" name="firstname" size="30" style="margin-left:175px;margin-right:30px;">
+				    <input type="text" name="lastname" size="30"><br><br>
+					<label>Email</label>
+					<input type="email" name="email" size="30" style="margin-left:180px">
+					</fieldset><br>
+					<fieldset>
+					<legend style="color:green; font-size:15px;">Design</legend>
+					<label style="margin-right:90px">T-shirt model</label>
+					<input type="radio" name="tshirts" value="tshirt1"><img src="1.jpg" alt="t-shirt-1" >
+                    <input type="radio" name="tshirts" value="tshirt1"><img src="2.jpg" alt="t-shirt-2">
+                    <input type="radio" name="tshirts" value="tshirt1"><img src="3.jpg" alt="t-shirt-3">
+					</fieldset><br><br>
+					<fieldset>
+					<legend style="color:green; font-size:15px;">Order-Details</legend>
+					<label>Size</label>
+					<select name="sizes" style="margin-left:175px">
+					    <option value="S">S</option>
+						<option value="M">M</option>
+						<option value="L">L</option>
+						<option value="XL">XL</option>
+					</select><br><br>
+                    <label>Quantity</label>
+					<select name="quantity" style="margin-left:138px;padding-right:14px;">
+					    <option value="one">1</option>
+						<option value="two">2</option>
+						<option value="three">3</option>
+					</select><br><br>
+                    <label>Delivery Date</label>
+                    <input type="date" name="delivery-date" min="2018-08-26" max="2018-09-09" style="margin-left:96px"><br><br>
+                    <label>Delivery Address</label>	
+                    <input type="text" name="address-1" placeholder="Street Address" size="80" style="margin-left:65px"><br><br>
+                    <input type="text" name="address-2" placeholder="Street Address Line 2" size="80" style="margin-left:218px"><br><br>
+                    <input list="city" placeholder="city" style="margin-left:218px;margin-right:30px;">
+                    <datalist id="city">
+					<option value="Jabalpur">
+					<option value="Gwalior">
+					<option value="Bhopal">
+                    </datalist>	
+                    <input type="number" placeholder="zip-code"><br><br>
+					</fieldset><br><br>
+                    <a href="#"><button class="button" type="button" value="purchase" onclick="alert('This is a dummy webpage!')">Purchase</button></a>				
+				</form>
+			</div>
+		</div>
+		<footer>
+		    Coded By Ayash
+		</footer>
+	</body>
+</html>
